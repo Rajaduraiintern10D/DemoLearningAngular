@@ -13,5 +13,9 @@
 <div>
   <h3>one way binding -Event Binding</h3>
   <button (click)="myFunction()">Show alert</button>
-
+</div>
+<div>
+  <h3>Two binding</h3>
+  <input [(ngModel)]="name" placeholder="Enter your name">
+    <p>Your name is: {{ name }}</p>
 </div>

@@ -12,4 +12,6 @@ export class AppComponent {
   myFunction(): void { 
     alert('Show alert!'); 
   }
+  name: string = ''; // Initialize name property
+
 }
