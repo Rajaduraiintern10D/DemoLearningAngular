@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DemoLearning';
+  firstName: string = "Yallaling";
+  lastName:string = "Goudar";
+  myFunction(): void { 
+    alert('Show alert!'); 
+  }
 }
