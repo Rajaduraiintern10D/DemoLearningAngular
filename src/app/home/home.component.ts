@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+ //pipes Example
+  today : Date = new Date();
+  
+  //asnyc pipes Example
+  appStatus =new Promise((resolve,reject)=>{
+  setTimeout(() => {
+    resolve('users data Recevied')
+  }, 3000);
+})
 }
