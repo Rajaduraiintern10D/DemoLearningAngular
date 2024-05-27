@@ -1,3 +1,5 @@
+// app.component.ts
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -12,6 +14,8 @@ export class AppComponent {
   myFunction(): void { 
     alert('Show alert!'); 
   }
-  name: string = ''; // Initialize name property
+  name: string = '';
+
+
 
 }
