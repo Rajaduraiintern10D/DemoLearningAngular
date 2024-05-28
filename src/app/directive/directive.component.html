@@ -1,0 +1,15 @@
+<h1>Structural Directives</h1>
+<div *ngIf="isVisible">This content is visible</div>
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<h1>Common Built-in Attribute Directives</h1>
+<div [ngClass]="{'active':isActive,'disabled':isDisabled}">Class Bound Element</div>
+
+<div [ngStyle]="{ 'color': color, 'font-size': fontSize }">Styled Element</div>
+<br>
+<input [(ngModel)]="name">
+
+<p>Hello, {{name}} !</p>
+

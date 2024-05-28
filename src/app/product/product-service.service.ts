@@ -10,7 +10,7 @@ export class Product {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' 
 })
 export class ProductServiceService {
 

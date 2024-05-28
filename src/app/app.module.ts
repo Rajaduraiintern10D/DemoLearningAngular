@@ -12,6 +12,7 @@ import { ProductComponent } from './product/product.component';
 import { ErrorComponent } from './Error.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
+import { DirectiveComponent } from './directive/directive.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { appRoutes } from './app.routes';
     HomeComponent,
     ContactComponent,
     ProductComponent,
-    ErrorComponent
+    ErrorComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,

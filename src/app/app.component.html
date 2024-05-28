@@ -17,6 +17,9 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['contact']">Contact us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['directive']">Directive</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -41,7 +44,7 @@
 <div>
   <h3>one way binding -Event Binding</h3>
   <button (click)="myFunction()">Show alert</button>
-</div>
+</div>    
 <div>
   <h3>Two way binding</h3>
   <input [(ngModel)]="name" placeholder="Enter your name">
