@@ -13,6 +13,8 @@ import { ErrorComponent } from './Error.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { DirectiveComponent } from './directive/directive.component';
+import { ApphighlightDirective } from './directive/apphighlight.directive';
+import { PipesPipe } from './home/pipes.pipe';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { DirectiveComponent } from './directive/directive.component';
     ContactComponent,
     ProductComponent,
     ErrorComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    ApphighlightDirective,
+    PipesPipe
   ],
   imports: [
     BrowserModule,
