@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
@@ -15,6 +15,7 @@ import { appRoutes } from './app.routes';
 import { DirectiveComponent } from './directive/directive.component';
 import { ApphighlightDirective } from './directive/apphighlight.directive';
 import { PipesPipe } from './home/pipes.pipe';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 
 @NgModule({
@@ -28,12 +29,14 @@ import { PipesPipe } from './home/pipes.pipe';
     ErrorComponent,
     DirectiveComponent,
     ApphighlightDirective,
-    PipesPipe
+    PipesPipe,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule ,
     AppRoutingModule,
+    ReactiveFormsModule,
  
     RouterModule.forRoot(appRoutes) 
   ],
