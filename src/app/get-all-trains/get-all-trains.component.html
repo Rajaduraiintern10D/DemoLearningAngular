@@ -1,0 +1,29 @@
+<!-- get-all-trains.component.html -->
+<button (click)="toggleData()">Show Trains List</button>
+
+<table class="train-table" *ngIf="responseData">
+  <thead>
+    <tr>
+      <th>Train Name</th>
+      <th>Train Number</th>
+      <th>Starting City</th>
+      <th>Destination City</th>
+      <th>Departure Date</th>
+      <th>Departure Time</th>
+      <th>Destination Date</th>
+      <th>Destination Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let train of responseData">
+      <td>{{ train.trainName }}</td>
+      <td>{{ train.trainNumber }}</td>
+      <td>{{ train.startingCity }}</td>
+      <td>{{ train.destinationCity }}</td>
+      <td>{{ train.fullDeparture | date: 'shortDate' }}</td>
+      <td>{{ train.fullDeparture | date: 'shortTime' }}</td>
+      <td>{{ train.fullDestination | date: 'shortDate' }}</td>
+      <td>{{ train.fullDestination | date: 'shortTime' }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -16,6 +16,8 @@ import { DirectiveComponent } from './directive/directive.component';
 import { ApphighlightDirective } from './directive/apphighlight.directive';
 import { PipesPipe } from './home/pipes.pipe';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { GetAllTrainsComponent } from './get-all-trains/get-all-trains.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,6 +39,7 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
     FormsModule ,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
  
     RouterModule.forRoot(appRoutes) 
   ],

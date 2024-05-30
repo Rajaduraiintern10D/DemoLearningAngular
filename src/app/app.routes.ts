@@ -10,8 +10,9 @@ export const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'product', component: ProductComponent },
-    {path : 'directive' ,component :DirectiveComponent},
-    {path : 'reactive-forms',component:ReactiveFormsComponent},
+    { path: 'directive', component: DirectiveComponent },
+    { path: 'reactive-forms', component: ReactiveFormsComponent },
+    { path: 'get-all-trains', loadChildren: () => import('./get-all-trains/get-all-trains-module/get-all-trains-module.module').then(m => m.GetAllTrainsModuleModule) },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: '**', component: ErrorComponent }
-  ];
+];
